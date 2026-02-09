@@ -23,4 +23,24 @@ users.forEach((user, index) => {
     <td>${user.heat}</td>
   `;
   tbody.appendChild(tr);
+
 });
+.form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 8px 10px;
+  margin: 0 4px;
+  width: 120px;
+}
+
+.form button {
+  padding: 8px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
