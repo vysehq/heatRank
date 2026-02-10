@@ -8,25 +8,27 @@
 <body>
 
 <h1>🔥 用户热度排行榜</h1>
-<div class="time-info" id="timeInfo">最后更新: -</div>
 <div class="form">
   <input id="nameInput" placeholder="用户名" />
   <input id="likesInput" type="number" placeholder="点赞数" />
   <input id="commentsInput" type="number" placeholder="评论数" />
   <button id="addBtn">添加用户</button>
 </div>
-<table>
-  <thead>
-    <tr>
-      <th>排名</th>
-      <th>用户</th>
-      <th>👍 点赞</th>
-      <th>💬 评论</th>
-      <th>🔥 热度</th>
-    </tr>
-  </thead>
-  <tbody id="ranking-body"></tbody>
-</table>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>排名</th>
+        <th>用户</th>
+        <th>👍 点赞</th>
+        <th>💬 评论</th>
+        <th>🔥 热度</th>
+      </tr>
+    </thead>
+    <tbody id="ranking-body"></tbody>
+  </table>
+  <div class="time-info" id="timeInfo">最后更新: -</div>
+</div>
 
 <script src="script.js"></script>
 </body>
