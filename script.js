@@ -7,6 +7,13 @@ const users = [
 
 const tbody = document.getElementById("ranking-body");
 
+// 👉 更新时间
+function updateTime() {
+  const now = new Date();
+  const timeStr = now.toLocaleString('zh-CN');
+  document.getElementById("timeInfo").textContent = `最后更新: ${timeStr}`;
+}
+
 // 👉 统一的渲染函数
 function renderRanking() {
   // 1. 计算热度
@@ -32,6 +39,9 @@ function renderRanking() {
     `;
     tbody.appendChild(tr);
   });
+
+  // 5. 更新时间
+  updateTime();
 }
 
 // 👉 初次渲染

@@ -8,6 +8,13 @@ h1 {
   text-align: center;
 }
 
+.time-info {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
 table {
   margin: auto;
   width: 600px;
